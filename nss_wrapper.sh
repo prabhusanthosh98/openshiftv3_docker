@@ -14,5 +14,9 @@ echo "default:x:${USER_ID}:${GROUP_ID}:Default Application User:${HOME}:/sbin/no
 
 export LD_PRELOAD=libnss_wrapper.so
 
-exec "$@"
+# exec "$@"
+
+
+/opt/app-root/src/run.sh
+
 

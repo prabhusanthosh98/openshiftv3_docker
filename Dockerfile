@@ -16,5 +16,5 @@ RUN chmod -R g+rw /opt/app-root/src
 RUN find /opt/app-root/src -type d -exec chmod g+x {} +
 # ENTRYPOINT [ "source",  "/opt/app-root/src/nss_wrapper.sh" ]
 # ENTRYPOINT [ "/opt/app-root/src/nss_wrapper.sh" ]
-ENTRYPOINT /bin/bash -c "source /opt/app-root/src/nss_wrapper.sh"
+ENTRYPOINT /bin/bash -c "source"
 CMD [ "./run.sh" ]
