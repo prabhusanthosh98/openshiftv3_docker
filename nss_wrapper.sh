@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script should be used as the entrypoint of the Docker container
 # to ensure that the passwd file has a reference to the user
