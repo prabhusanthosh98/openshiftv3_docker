@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # This script should be used as the entrypoint of the Docker container
 # to ensure that the passwd file has a reference to the user
 # even if the container is started with a non-existant user
@@ -16,6 +14,4 @@ echo "default:x:${USER_ID}:${GROUP_ID}:Default Application User:${HOME}:/sbin/no
 export LD_PRELOAD=libnss_wrapper.so
 
 exec "$@"
-
-#!/bin/bash
 
