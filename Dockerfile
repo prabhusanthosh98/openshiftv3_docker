@@ -5,7 +5,7 @@ USER root
 RUN yum -y install nss_wrapper gettext
 # RUN pip install requests
 
-RUN adduser default
+# RUN adduser default
 
 ADD ./ /opt/app-root/src/
 
