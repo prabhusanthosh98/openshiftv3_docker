@@ -14,5 +14,5 @@ USER root
 RUN chgrp -R 0 /opt/app-root/src
 RUN chmod -R g+rw /opt/app-root/src
 RUN find /opt/app-root/src -type d -exec chmod g+x {} +
-ENTRYPOINT [ "./nss_wrapper.sh" ]
+# ENTRYPOINT [ "./nss_wrapper.sh" ]
 CMD [ "./run.sh" ]
