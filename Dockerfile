@@ -15,6 +15,6 @@ RUN find /opt/app-root/src -type d -exec chmod g+x {} +
 # ENTRYPOINT [ "source",  "/opt/app-root/src/nss_wrapper.sh" ]
 RUN adduser 1001
 USER 1001
-ENTRYPOINT [ "/opt/app-root/src/nss_wrapper.sh" ]
-# ENTRYPOINT /bin/bash -c "source"
+# ENTRYPOINT [ "/opt/app-root/src/nss_wrapper.sh" ]
+ENTRYPOINT export USER_ID=$(id -u)
 CMD [ "./run.sh" ]
