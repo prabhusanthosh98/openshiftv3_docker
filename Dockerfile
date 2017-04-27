@@ -17,4 +17,4 @@ RUN adduser 1001
 USER 1001
 ENTRYPOINT [ "/opt/app-root/src/nss_wrapper.sh" ]
 # ENTRYPOINT export USER_ID=$(id -u)
-CMD [ "./run.sh" ]
+CMD [ "/opt/app-root/src/run.sh" ]
