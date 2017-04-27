@@ -1,4 +1,4 @@
 FROM python:3.4
 
 
-CMD ["echo", "hello"]
+CMD ["python" "-m" "SimpleHTTPServer" "8000"]
