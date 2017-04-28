@@ -10,7 +10,7 @@ ADD ./ /opt/app-root/src/
 
 WORKDIR /opt/app-root/src
 
-RUN pip install -r requirements.txt
+RUN /bin/bash -c "pip install -r requirements.txt"
 
 RUN chgrp -R 0 /opt/app-root/src
 RUN chmod -R g+rw /opt/app-root/src
