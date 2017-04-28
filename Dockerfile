@@ -10,6 +10,8 @@ ADD ./ /opt/app-root/src/
 
 WORKDIR /opt/app-root/src
 
+RUN pip install --upgrade pip
+
 RUN /bin/bash -c "pip install -r requirements.txt"
 
 RUN chgrp -R 0 /opt/app-root/src
