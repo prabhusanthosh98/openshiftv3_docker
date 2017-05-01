@@ -14,7 +14,7 @@ WORKDIR /opt/app-root/src
 
 # RUN pip install requests
 # RUN /bin/bash -c "pip install -r requirements.txt"
-
+RUN echo 'source /opt/app-root/src/nss_wrapper.sh' >> /opt/app-root/etc/scl_enable 
 RUN chgrp -R 0 /opt/app-root/src
 RUN chmod -R g+rw /opt/app-root/src
 RUN find /opt/app-root/src -type d -exec chmod g+x {} +
